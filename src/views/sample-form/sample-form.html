@@ -1,0 +1,65 @@
+<template>
+  <require from="../../variables.scss"></require>
+  <div class="text-info">
+    <form>
+      <span class="rounded border border-info">
+        &nbsp Exemples de champs de formulaire &nbsp
+      </span>
+      <br><br>
+      <div class="mb-3">
+        <!-- Section "Montant en euros" -->
+        <label for="montant" class="form-label">Montant en euros</label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="montant"
+            input-mask="currency"
+            value.one-time="montant | numberFormat: { digits: 4 }"
+            value.from-view="montant | cleanInputMask" />
+          <span class="input-group-text bg-success">€</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <!-- Section "Taux" -->
+        <label for="montant" class="form-label">Taux</label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="taux"
+            input-mask="percentage"
+            value.one-time="taux | numberFormat"
+            value.from-view="taux | cleanInputMask" />
+          <span class="input-group-text bg-success">%</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <!-- Section "Rick Asley" -->
+        <label for="montant" class="form-label">Rick Asley</label>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="test"
+            input-mask="currency"
+            value.one-time="test | numberFormat"
+            value.from-view="test | cleanInputMask" />
+          <span class="input-group-text bg-success">XD</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <!-- Section "Nombre Pièces" -->
+        <label for="nbPieces" class="form-label">Nombre pièces</label>
+        <input type="text" class="form-control" id="nbPieces" value.two-way="nbPieces+test" />
+      </div>
+      <!-- Boutons de bas de page -->
+      <div class="mb-3">
+        <button class="btn btn-primary" click.trigger="sauvegarder()">Sauvegarder</button>
+        <button class="btn btn-secondary" click.trigger="retourAccueil()">Ignorer</button>
+        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Best Link</a> 
+        <button class="btn btn-secondary" click.trigger="secretMessage()">Secret Solution</button>
+      </div>
+    </form>
+  </div>
+</template>

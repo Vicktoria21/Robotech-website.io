@@ -1,0 +1,24 @@
+<template> <!-- Nécessaire en Aurelia JS -->
+  <require from="./app.scss"></require>
+  <div class ="background">
+    <div id="locker" if.bind="locker.isLocked">
+      <div class="splash">
+        <div class="splash-inner">
+          <i class="fas fa-2xl fa-lock"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header (barre de haut de page) -->
+    <compose view="./views/navbar.html" containerless></compose>
+
+    <!-- Page Content -->
+    <main class="flex-shrink-0">
+      <div id="main-content" class="container-xxl">
+        <router-view></router-view> <!-- Toujours présent mais masqué -->
+      </div>
+    </main>
+  </div>
+    <!-- Footer (barre de bas de page) -->
+    <compose view="./views/footer.html" containerless></compose>
+</template>

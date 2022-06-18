@@ -1,0 +1,16 @@
+{
+  "authentication": {
+    "redirectHost": "https://aide-accession.lvh.me",
+    "authority": "https://rec.client.almerys.com/auth/realms/ALS",
+    "clientId": "ALS_AIDEACCESSION_FRONT",
+    "apiScope": ""
+  },
+  "urls": {
+    "gateway": "https://aide-accession-gateway-api.lvh.me:4430",
+    "address": "https://api-completion.actionlogement.fr"
+  },
+  "environment": {
+    "type": "dev",
+    "name": "local"
+  }
+}

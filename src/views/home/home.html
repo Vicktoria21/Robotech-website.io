@@ -1,0 +1,34 @@
+<template>
+  <div class="text-info">
+    <!-- Boutons Notif et Modal en bas de page -->
+    <br>
+    <center>
+      <button class="btn btn-primary" click.trigger="show()">NOTIF </button> &nbsp
+      <button class="btn btn-secondary" click.trigger="modal()">DOUBLE </button> &nbsp
+      <button class="btn btn-secondary" click.trigger="modal2()">QUIZ </button> &nbsp
+      <br>
+    </center>
+    <div>Was Cancelled: ${wasCancelled}</div>
+    <div>Output: ${unEntier}</div>
+    <div>Result : ${unEntier==="SUPER IDOL"? 'Correct !' : 'Incorrect'}</div>
+    <br>
+    <center>
+      <label>
+        <span class="rounded border border-info">
+          &nbsp Inspirational Quote : &nbsp
+        </span>
+        <br><br>
+        <select value.bind="InspirationalQuote">
+          <option model.bind="null"></option>
+          <option repeat.for="q of quotes"
+                  model.bind="q">
+                  ${q.author}
+        </select>
+      </label>
+      <br><br>
+      ${InspirationalQuote.quote}
+      <br><br>
+      <a class="btn btn-primary ${InspirationalQuote? '': 'disabled'}" href="${InspirationalQuote.link}">Corresponding Reference</a> 
+    </div>
+  </center>
+</template>

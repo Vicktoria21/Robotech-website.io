@@ -1,0 +1,16 @@
+{
+  "authentication": {
+    "redirectHost": "https://sample.lvh.me",
+    "authority": "https://login.microsoftonline.com/c1b8a097-d827-417a-b3a2-23aaa1af9f51/v2.0/",
+    "clientId": "af571b86-fa84-4389-b4ce-75e030443aef",
+    "apiScope": "499b84ac-1321-427f-aa17-267ca6975798/.default"
+  },
+  "urls": {
+    "ado": "https://dev.azure.com/actionlogementservices/_apis/",
+    "address": "https://api-completion.actionlogement.fr"
+  },
+  "environment": {
+    "type": "dev",
+    "name": "local"
+  }
+}

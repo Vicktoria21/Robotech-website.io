@@ -1,0 +1,22 @@
+<template>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Session expirée</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          click.trigger="cancel()"></button>
+      </div>
+      <div class="modal-body">
+        <p>Votre session a expiré, voulez-vous vous reconnecter ?</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" click.trigger="confirm()">Oui</button>
+        <button class="btn btn-secondary" click.trigger="cancel()">Non</button>
+      </div>
+    </div>
+  </div>
+</template>
