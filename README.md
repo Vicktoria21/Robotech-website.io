@@ -31,3 +31,27 @@ Run `npm run build`, or the old way `au build --env prod`.
 Run `au test` (or `au jest`).
 
 To run in watch mode, `au test --watch` or `au jest --watch`.
+
+
+
+
+
+**TO DO LIST :**
+A faire au plus vite : heberger !!
+
+Fenetres a coder : 
+-Actualités
+-Qui sommes nous ?
+- Nos projets 
+- Nos evenements
+- Partenaires
+- quelques Photos de l'asso
+- Nous contacter (Linkedin/insta/Fb) et contacts mail du président
+- Liens utiles/ Pour commencer...
+
+Direction artistique/ charte graphique :
+Fond bleu sombre si possible choix par utilisateur
+Police Nunito partout
+
+
+

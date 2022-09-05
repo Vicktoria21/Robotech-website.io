@@ -10,7 +10,8 @@ export const ROUTE = {
   formulaire: 'formulaire',
   parametre: 'parametre',
   youtube : 'youtube',
-  accueil : 'accueil'
+  accueil : 'accueil',
+  who : 'who'
 };
 
 /**
@@ -31,14 +32,14 @@ export const routes = [
     name: ROUTE.home,
     moduleId: PLATFORM.moduleName('views/home/home'),
     nav: true,
-    title: 'Temp'
+    title: 'Home'
   },
   {
     route: 'formulaire',
     name: ROUTE.formulaire,
     moduleId: PLATFORM.moduleName('views/sample-form/sample-form'),
     nav: true,
-    title: 'Formulaire'
+    title: 'Sample Form'
   },
   {
     route: 'parametre',
@@ -54,6 +55,15 @@ export const routes = [
     href: 'https://www.youtube.com/',
     nav: true,
     title: 'Youtube'
+  },
+
+  {
+    route: 'who',
+    name: ROUTE.who,
+    moduleId: PLATFORM.moduleName('views/who/who'),
+    nav: true,
+    title: 'Qui sommes-nous ?',
+    
   }
 ];
 
