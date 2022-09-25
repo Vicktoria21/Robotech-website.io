@@ -1,0 +1,25 @@
+<template>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-info">
+        <h5 class="modal-title">Organigramme Robotech 2022-2023</h5>
+        <!-- Croix pour quitter la fenêtre -->
+        <button
+          type="button"
+          class="btn-close "
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          click.trigger="return()"></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <img src ="../../../static/images/backgrounds/robotech-equipe.png" alt="Equipe" class="img-thumbnail">
+        </div>
+        
+        <div class="modal-footer">
+          <button class="btn btn-primary" click.trigger="return()">Retour</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>

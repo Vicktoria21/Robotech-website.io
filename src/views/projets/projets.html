@@ -1,65 +1,73 @@
 <template>
-  <require from="../../variables.scss"></require>
+
   <div class="text-info">
-    <form>
-      <span class="rounded border border-info">
-        &nbsp Exemples de champs de formulaire &nbsp
-      </span>
-      <br><br>
-      <div class="mb-3">
-        <!-- Section "Montant en euros" -->
-        <label for="montant" class="form-label">Montant en euros</label>
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control"
-            id="montant"
-            input-mask="currency"
-            value.one-time="montant | numberFormat: { digits: 4 }"
-            value.from-view="montant | cleanInputMask" />
-          <span class="input-group-text bg-success">€</span>
-        </div>
-      </div>
-      <div class="mb-3">
-        <!-- Section "Taux" -->
-        <label for="montant" class="form-label">Taux</label>
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control"
-            id="taux"
-            input-mask="percentage"
-            value.one-time="taux | numberFormat"
-            value.from-view="taux | cleanInputMask" />
-          <span class="input-group-text bg-success">%</span>
-        </div>
-      </div>
-      <div class="mb-3">
-        <!-- Section "Rick Asley" -->
-        <label for="montant" class="form-label">Rick Asley</label>
-        <div class="input-group">
-          <input
-            type="text"
-            class="form-control"
-            id="test"
-            input-mask="currency"
-            value.one-time="test | numberFormat"
-            value.from-view="test | cleanInputMask" />
-          <span class="input-group-text bg-success">XD</span>
-        </div>
-      </div>
-      <div class="mb-3">
-        <!-- Section "Nombre Pièces" -->
-        <label for="nbPieces" class="form-label">Nombre pièces</label>
-        <input type="text" class="form-control" id="nbPieces" value.two-way="nbPieces+test" />
-      </div>
-      <!-- Boutons de bas de page -->
-      <div class="mb-3">
-        <button class="btn btn-primary" click.trigger="sauvegarder()">Sauvegarder</button>
-        <button class="btn btn-secondary" click.trigger="retourAccueil()">Ignorer</button>
-        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Best Link</a> 
-        <button class="btn btn-secondary" click.trigger="secretMessage()">Secret Solution</button>
-      </div>
-    </form>
+    <center><h1><b><u>Nos Projets</u></b></h1></center>
+      <hr>
   </div>
+
+  <div class="container-fluid text-info">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3" style="border:0px solid 
+    #ddd">
+          <img src="../../../static/images/backgrounds/robotech-kidikitbot.png" alt="Kidikitbot" class="img-thumbnail">
+        </div>
+        <div class="col-xl-7 col-lg-6 col-md-6" style="border:0px solid 
+    #ddd">
+          <center>
+            <h2><b>Kidikitbot</b></h2>
+            <br>
+            <p><i>"Il s'agit d'un robot a visée pédagogique pour apprendre les bases de l'électronique, informatique et mécanique."</i>
+            </p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+  <div class="text-info">
+      <hr>
+  </div>
+
+  <div class="container-fluid text-info">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3" style="border:0px solid 
+  #ddd">
+        <img src="../../../static/images/backgrounds/robotech-gant.png" alt="Gant" class="img-thumbnail">
+      </div>
+      <div class="col-xl-7 col-lg-6 col-md-6" style="border:0px solid 
+  #ddd">
+        <center>
+          <h2><b>Gan'gue des Signes</b></h2>
+          <br>
+          <p><i>"Nous avons créé un gant muni de capteurs flexibles, constitué de résistances variables en fonctions de la pliure du capteur.
+             Ainsi, le but était de pouvoir traduire les mouvements de la langue des signes."</i>
+          </p>
+        </center>
+      </div>
+    </div>
+  </div>
+
+    <div class="text-info">
+      <hr>
+  </div>
+
+  <div class="container-fluid text-info">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3" style="border:0px solid 
+  #ddd">
+        <img src="../../../static/images/backgrounds/robotech-tibo.png" alt="Tibo" class="img-thumbnail">
+      </div>
+      <div class="col-xl-7 col-lg-6 col-md-6" style="border:0px solid 
+  #ddd">
+        <center>
+          <h2><b>Tibo</b></h2>
+          <br>
+          <p><i>" Tibo est un robot pédagogique capable de se déplacer librement dans une salle de classe en évitant les obstacles.
+             Il peut également être piloté à distance via une application Bluetooth. 
+            Son design permet aux enfants de comprendre facilement son fonctionnement. "</i>
+          </p>
+        </center>
+      </div>
+    </div>
+  </div>
+    <br><br>
 </template>

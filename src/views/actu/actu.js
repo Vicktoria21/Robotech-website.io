@@ -4,8 +4,8 @@ import { Connection } from 'aurelia-kis-oidc';
 import { DialogService } from 'core/dialog-service/dialog-service';
 import { ToastService } from 'core/toast-service/toast-service';
 import { ApiService } from 'services/api-service';
-import { SampleDialog } from 'views/dialogs/sample-dialog';
-import { SuperIdolTest } from 'views/dialogs/super-idol-test';
+import { RobotechDialog } from 'views/dialogs/robotech-dialog';
+import { RobotechDialog2 } from 'views/dialogs/robotech-dialog2';
 
 @inject(ToastService, DialogService, Connection, ApiService)
 export class Home {
@@ -42,7 +42,7 @@ export class Home {
 
   async modal() {
     const { wasCancelled, output } = await this._dialog.open({
-      viewModel: SampleDialog,
+      viewModel: RobotechDialog,
       model: { unEntier: '1000' },
       locked: true
     });
@@ -52,7 +52,7 @@ export class Home {
 
   async modal2() {
     const { wasCancelled, output } = await this._dialog.open({
-      viewModel: SuperIdolTest,
+      viewModel: RobotechDialog2,
       model: { unEntier: '' },
       locked: true
     });

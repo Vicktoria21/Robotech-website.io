@@ -2,7 +2,7 @@ import { DialogController } from '../../core/dialog-service/dialog-controller';
 import { inject } from 'aurelia-framework';
 
 @inject(DialogController)
-export class SuperIdolTest {
+export class RobotechDialog {
   /** @type {Number} */
   input;
   /**
@@ -12,15 +12,10 @@ export class SuperIdolTest {
     this._controller = controller;
   }
 
-  activate({ unEntier }) {
-    this.unEntier = unEntier;
+  activate() {
   }
 
-  confirm() {
-    this._controller.ok({ unEntier: this.unEntier.toUpperCase()});
-  }
-
-  cancel() {
+  return() {
     this._controller.cancel();
   }
 }

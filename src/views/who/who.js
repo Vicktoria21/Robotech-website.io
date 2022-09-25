@@ -8,6 +8,8 @@ import { Connection } from 'aurelia-kis-oidc';
 import { DialogService } from 'core/dialog-service/dialog-service';
 import { ToastService } from 'core/toast-service/toast-service';
 import { ApiService } from 'services/api-service';
+import { RobotechDialog } from 'views/dialogs/robotech-dialog';
+import { RobotechDialog2 } from 'views/dialogs/robotech-dialog2';
 
 @inject(ToastService, DialogService, Connection, ApiService)
 export class Home {
@@ -29,6 +31,19 @@ export class Home {
   activate() {
   }
 
+  async modal() {
+    const { wasCancelled, output } = await this._dialog.open({
+      viewModel: RobotechDialog,
+      locked: true
+    });
+  }
+
+  async modal2() {
+    const { wasCancelled, output } = await this._dialog.open({
+      viewModel: RobotechDialog2,
+      locked: true
+    });
+  }
 }
 
 /*****************************************************************************************************************/
