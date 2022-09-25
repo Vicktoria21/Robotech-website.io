@@ -36,6 +36,7 @@ To run in watch mode, `au test --watch` or `au jest --watch`.
 
 
 
+
 **TO DO LIST :**
 A faire au plus vite : heberger !!
 
@@ -52,6 +53,5 @@ Fenetres a coder :
 Direction artistique/ charte graphique :
 Fond bleu sombre si possible choix par utilisateur
 Police Nunito partout
-
 
 

@@ -1,8 +1,8 @@
 <template>
   <header>
     <!-- Format de la barre principale -->
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top bg-primary"> 
-      <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-sm navbar-static-top fixed-top bg-dark"> 
+      <div class="container-fluid">
         <a class="navbar-brand p-0" href="/" aria-label="Action Logement"
           ><img class="navbar-logo" src="../../static/images/robotech-logo.png" title="Logo"
         /></a>
@@ -17,9 +17,13 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         
+        <div class="text-info">
+          <a>Robotech Sorbonne</a>
+        </div>
+
         <!-- Chaque onglet de la barre principale -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li repeat.for="route of router.navigation"  class="nav-item">
               <a
                 class="nav-link active" href="${route.href}">
@@ -28,6 +32,7 @@
             </li>
           </ul>
 
+        <!--
           <a href="parametre" class="btn btn-outline-light" role="button" aria-pressed="true">
           Paramètres 
           </a>
@@ -37,6 +42,7 @@
               class="btn btn-outline-light" type="submit" disabled >Connexion (en cours...)
             </button>
           </form>
+        -->
         </div>
       </div>
 

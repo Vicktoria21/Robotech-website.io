@@ -10,7 +10,7 @@ import { ToastService } from 'core/toast-service/toast-service';
 import { ApiService } from 'services/api-service';
 
 @inject(ToastService, DialogService, Connection, ApiService)
-export class Accueil {
+export class Home {
     
   /** @type { Array<{ name: string }>} */
   /**

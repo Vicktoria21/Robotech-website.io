@@ -27,43 +27,41 @@ export const routes = [
     title: 'Accueil'
   },
   {
-
-    route: ['home'],
-    name: ROUTE.home,
-    moduleId: PLATFORM.moduleName('views/home/home'),
-    nav: true,
-    title: 'Home'
-  },
-  {
-    route: 'formulaire',
-    name: ROUTE.formulaire,
-    moduleId: PLATFORM.moduleName('views/sample-form/sample-form'),
-    nav: true,
-    title: 'Sample Form'
-  },
-  {
-    route: 'parametre',
-    name: ROUTE.parametre,
-    moduleId: PLATFORM.moduleName('views/settings/settings'),
-    nav: false,
-    title: 'Paramètres'
-  },
-  {
-    route: 'youtube',
-    name: ROUTE.youtube,
-    moduleId: 'youtube',
-    href: 'https://www.youtube.com/',
-    nav: true,
-    title: 'Youtube'
-  },
-
-  {
     route: 'who',
     name: ROUTE.who,
     moduleId: PLATFORM.moduleName('views/who/who'),
     nav: true,
     title: 'Qui sommes-nous ?',
     
+  },
+  {
+
+    route: 'actu',
+    name: ROUTE.actu,
+    moduleId: PLATFORM.moduleName('views/actu/actu'),
+    nav: true,
+    title: 'Notre Actu'
+  },
+  {
+    route: 'projets',
+    name: ROUTE.projets,
+    moduleId: PLATFORM.moduleName('views/projets/projets'),
+    nav: true,
+    title: 'Nos Projets'
+  },
+  {
+    route: 'photos',
+    name: ROUTE.photos,
+    moduleId: PLATFORM.moduleName('views/photos/photos'),
+    nav: true,
+    title: 'Nos Photos'
+  },
+  {
+    route: 'contact',
+    name: ROUTE.contact,
+    moduleId: PLATFORM.moduleName('views/contact/contact'),
+    nav: true,
+    title: 'Nous Contacter'
   }
 ];
 
